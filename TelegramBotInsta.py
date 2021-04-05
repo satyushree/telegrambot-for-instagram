@@ -4,7 +4,7 @@ import logging
 import telegram
 import requests
 from bs4 import BeautifulSoup
-from telegram import Updater, CommandHandler, MessageHandler, Filters
+from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 from telegram.error import (TelegramError, Unauthorized, BadRequest, 
                             TimedOut, ChatMigrated, NetworkError)
 # Enable logging
