@@ -15,7 +15,11 @@ logger = logging.getLogger(__name__)
 
 token = "1811927116:AAFZ-EcqhBb0j8ApAHwAdmec-j2Na2XuFjU"
 
+url = 'https://www.instagram.com/accounts/login/'
+login_data = dict(login='satyu000', password='1@Vishruth')
+session = requests.session()
 
+r = session.post(url, data=login_data)
 
 def start(update,context):
     name = update.message.from_user.first_name
